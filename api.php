@@ -134,10 +134,9 @@
         } catch (Exception $e) {
             echo json_encode(FALSE);
             $error = true;
-        } finally {
-            if (!$error) {
-                echo json_encode(TRUE);
-            }
+        }
+        if (!$error) {
+            echo json_encode(TRUE);
         }
     } else {
         echo json_encode(FALSE);
