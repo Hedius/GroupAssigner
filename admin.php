@@ -16,7 +16,7 @@
         if (strlen($nick) < 3) {
             $extension = '';
         } else {
-            $extension = '&displayname='.urlencode($nick);
+            $extension = '&nickname='.urlencode($nick);
         }
         try {
             $ts3 = TeamSpeak3::factory(
