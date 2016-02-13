@@ -573,7 +573,7 @@
                                     <h1><small>Set Assignable Groups</small></h1>
                                 </div>
                                 <div class="alert alert-info" role="alert">Currently Only Server Groups with Icons can be chosen!</div>
-                                <?php if (!empty($icons)) { ?>
+                                <?php if (!is_array($icons)) { ?>
                                 <table style="font-size:13px;" class="table table-sm">
                                     <tr>
                                         <th>Icon</th>
