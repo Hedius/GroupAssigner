@@ -572,7 +572,8 @@
                                 <div class="page-header" style="margin-top:-3%; margin-bottom:5%">
                                     <h1><small>Set Assignable Groups</small></h1>
                                 </div>
-                               <div class="alert alert-info" role="alert">Currently Only Server Groups with Icons can be chosen!</div>
+                                <div class="alert alert-info" role="alert">Currently Only Server Groups with Icons can be chosen!</div>
+                                <?php if (!empty($icons)) { ?>
                                 <table style="font-size:13px;" class="table table-sm">
                                     <tr>
                                         <th>Icon</th>
@@ -598,6 +599,9 @@
                                     <input type="hidden" name="form_location" id="form_location" value="groups">
                                     <input type="submit" class="pull-right btn btn-primary" value="Save Groups"></input>
                                 </form>
+                                <?php } else { ?>
+                                    You need to Sync your Icons First!
+                                <?php } ?>
                             <?php } ?>
                         </div>
                     </div>
