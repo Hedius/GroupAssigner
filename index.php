@@ -17,7 +17,7 @@
         if (strlen(QUERYDISPLAYNAME) < 3) {
             $extension = "";
         } else {
-            $extension = '&displayname='.urlencode(QUERYDISPLAYNAME);
+            $extension = '&nickname='.urlencode(QUERYDISPLAYNAME);
         }
         try {
             $ts3 = TeamSpeak3::factory(
@@ -361,7 +361,7 @@
                             <ul class="list-group">
                                 <?php foreach (json_decode(RULES) as $index => $rule) { ?>
                                     <a href="#" class="list-group-item">
-                                        <h4 class="list-group-item-heading"><code>ง<?php echo $index + 1; ?></code></h4>
+                                        <h4 class="list-group-item-heading"><code>ยง<?php echo $index + 1; ?></code></h4>
                                         <p class="list-group-item-text"><?php echo $rule; ?></p>
                                     </a>
                                 <?php }  ?>
