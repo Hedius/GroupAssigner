@@ -15,3 +15,4 @@ Requirements:
 
 You may need to Sync the Icons about 3-4 Times to get all the Icons from the TeamSpeak Server
 This Project uses the TeamSpeak3 PHP Framework from PlanetTeamspeak!
+Please add the WebServer to your Server Query Whitelist!
