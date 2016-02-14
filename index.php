@@ -257,7 +257,7 @@
                 $groups = $ts3->servergroupList(array('type' => 1));
                 $cgroups = explode(',',$ts3->clientGetByDbid($_SESSION['dbid'])->client_servergroups);
             } catch (Teamspeak3_Exception $e) {
-                $error[] = array('danger', 'A error occured while trying to get Server Groups and Client Groups! '. $e);
+                $error[] = array('danger', 'A error occured while trying to get Server Groups and Client Groups! '. $e->getMessage());
             }
         }
     }
