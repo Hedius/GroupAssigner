@@ -1,3 +1,6 @@
+Multivit4min is the developer of GroupAssigner - This repo is just a fork of his repo. He apparently deleted his repo.
+
+
 This TeamSpeak GroupAssigner Tool will allow you to manage TeamSpeak Rules and self assignable Groups!
 
 Features:
